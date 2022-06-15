@@ -198,9 +198,9 @@ function playerNumbers(nameOfTeam) {
   console.log(playerStats('Ben Gordon'));
 //Build a function, bigShoeRebounds, that will return the number of rebounds associated with the player that has the largest shoe size. 
 function bigShoeRebounds() {
-    const playerInfo = Object.values(players());
+    const player = Object.values(players());
     
-    const biggestShoe = playerInfo.reduce((player1, player2) => {
+    const biggestShoe = player.reduce((player1, player2) => {
         if (player1.shoe > player2.shoe) {
             return player1;
         } else {
